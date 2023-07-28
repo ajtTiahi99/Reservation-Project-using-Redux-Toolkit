@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(213, 250, 250); */
+  padding: 5em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.people{
+  /* background-color: antiquewhite; */
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.names{
+  height: 90%;
+  width: 100%;
+  /* background-color: rgb(137, 137, 255); */
+  padding: 1em;
+  overflow-y: scroll;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name{
+  width: 90%;
+  height: 4em;
+  padding: 1em;
+  margin-bottom:8px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.input{
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.hr{
+  background-color: #000000;
+  width: 2px;
+  height: 100%;
+}
+.reservation{
+  /* background-color: rgb(218, 179, 255); */
+  width: 60%;
+  padding: 1em;
+}
+.dishes{
+  /* background: #6b6b6b; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.3em;
+  gap: 1em;
+  margin-bottom: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dish{
+  margin-right:5px;
+}
+.dishes:nth-of-type(1) span{
+  margin-left: 12px;
+  font-size: 1rem;
+  /* background-color: blue; */
 }
